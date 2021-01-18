@@ -74,10 +74,10 @@ AC_CHECK_HEADERS([usrsctp.h],
     [with_sctp="no"]
   )],[with_sctp="no"]
 )
-AC_SUBST(USRSCTP_LIBS)
-if test "x$with_sctp" != "xyes"; then
-  AC_MSG_ERROR([You need libusrsctp for the build])
-fi
+#AC_SUBST(USRSCTP_LIBS)
+#if test "x$with_sctp" != "xyes"; then
+#  AC_MSG_ERROR([You need libusrsctp for the build])
+#fi
 
 dnl build static plugins or not
 AC_MSG_CHECKING([whether to build static plugins or not])
